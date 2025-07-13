@@ -1,0 +1,111 @@
+/* src/index.css */
+
+:root {
+  --color-bg: #0f172a;       /* dark slate */
+  --color-text: #cbd5e1;     /* slate-300 */
+  --color-text-light: #f1f5f9; /* slate-100 */
+  --color-accent: #22863a;   /* forest green */
+  --color-accent-hover: #276749; /* darker forest green */
+  --font-family-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-accent-hover);
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-light);
+  margin-top: 0;
+}
+
+section {
+  padding: 4rem 1.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  background-color: #1e293b; /* slate-800 */
+  padding: 1rem 1.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-text);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+nav a:hover {
+  color: var(--color-accent);
+}
+
+button, a.button {
+  background-color: var(--color-accent);
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+button:hover, a.button:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.main-content {
+  padding-top: 5rem; /* space for fixed nav */
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 1rem 4rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--color-text);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
